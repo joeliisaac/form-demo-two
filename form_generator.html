@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team Peer Evaluation</title>
+	<style>
+		div {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	</style>
+
+<script>
+function validateForm() {
+    // write code to validate your forms
+
+}
+</script>
+
+</head>
+<body>
+
+	<h1>Team Evaluation </h1>
+
+	<h2>Grading Rules when inputting a value into the participation level box</h2>
+<ul>
+	<li>absent = F</li>
+	<li>unsatisfactory = D- to C+</li>
+	<li>satisfactory = B+ to A</li>
+	<li>above and beyond = A+</li>
+</ul></br>
+
+<h2>Rules for inputting data</h2>
+
+<ul>
+	<li>All team members names must be in alphabetical characters</li>
+	<li>Input team name, must use alphabetical characters</li>
+	<li>Overallgrade can be alphabetical characters (+/-) A,B,C,D,F</li>
+	<li>All time formats (start time and end time) must be in the form: hour:minute (i.e: 11:25)</li>
+</ul>
+
+
+
+	<div class = "comments">
+
+
+	<form id =theform action="form_processor.php" method="post">
+		<label>Team Name: <input type="strings" name="teamname" value="team"/></label><br /></br></br>
+
+
+		<label>Start Time: <input type="text" name="starttime" value="start"/></label><br /></br></br>
+
+		<label>End Time: <input type="text" name="endtime" value="End"/></label><br /></br></br>
+
+				<label>Team Member Name: <input type="text" name="memberone" value="name"/></label></br></br>
+
+				<label>level of participation: <input type= "text" name="participationone" value="score"/></label></br></br>
+
+				<label>Team Member Name: <input type="text" name="membertwo" value="name"/></label></br></br>
+
+				<label>level of participation: <input type= "text" name="participationtwo" value="score"/></label></br></br>
+
+				<label>Team Member Name: <input type="text" name="memberthree" value="name"/></label></br></br>
+
+				<label>level of participation: <input type= "text" name="participationthree" value="score"/></label></br></br>
+
+				<label>Team Member Name: <input type="text" name="memberfour" value="name"/></label><br /></br>
+
+				<label>level of participation: <input type= "text" name="participationfour" value="score"/></label></br></br>
+
+				<label>Team Member Name: <input type="text" name="memberfive" value="name"/></label></br></br>
+
+				<label>level of participation: <input type= "text" name="participationfive" value="score"/></label></br></br>
+
+				<label>notes: </br></br>
+				<textarea name="note"></textarea>
+				</label></br></br>
+				<label>Overall Grade: <input type="text" name="overall" value="grade"/></label></br></br>
+
+				<button type="submit" name="submit" value="submit">Submit</button>
+
+	</form>
+
+	</div>
+
+
+</body>
+</html>
